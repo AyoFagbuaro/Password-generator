@@ -148,21 +148,18 @@ function getPasswordOptions() {
 function getRandom(arr) {
   var random = Math.floor(Math.random() * arr.length);
   var x = arr[random];
-  console.log(x);
   return x;
 }
 
 // Function to generate password with user input
 function generatePassword() {
   getPasswordOptions();
-  console.log(passwordLength);
-
   var password = "";
   for (var i = 0; i < passwordLength; i++) {
     password += getRandom(allChars);
   }
 
-  alert("Generated Password: " + password);
+  // alert("Generated Password: " + password);
   return password;
 }
 
